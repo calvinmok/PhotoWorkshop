@@ -1,0 +1,75 @@
+
+
+
+
+
+
+
+#import "DataType.h"
+
+
+
+
+void ASSERT(Bool value)
+{
+    if (value == NO)
+        [NSException raise:@"" format:@""];
+}
+
+
+Int BREAK(void)
+{
+	Int i = 0;
+	i = rand();
+	return i;
+}
+
+Int BREAK_IF(Bool value)
+{
+	if (value)
+	{
+		return BREAK();
+	}
+	
+	return 0;	
+}
+
+
+
+
+
+
+
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(NubleID)
+
+
+
+	
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Bool)
+
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Byte)
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Char)
+
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Int)
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(UInt)
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Single)
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(Double)
+
+OBJECT_LIST_IMPLEMENTATION_TEMPLATE(String, NSObject)
+OBJECT_LIST_IMPLEMENTATION_TEMPLATE(StableString, String)
+OBJECT_LIST_IMPLEMENTATION_TEMPLATE(MutableString, String)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

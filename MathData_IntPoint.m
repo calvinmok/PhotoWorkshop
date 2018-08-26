@@ -1,0 +1,22 @@
+
+
+
+
+
+#import "MathData.h"
+
+
+
+
+
+
+
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(IntPoint)
+STRUCT_LIST_IMPLEMENTATION_TEMPLATE(UIntPoint)
+
+
+
+
+
+
+
